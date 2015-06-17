@@ -1,0 +1,216 @@
+ // Bourbon & Neat
+@import '../../bower_components/bourbon/dist/bourbon';
+@import '../../bower_components/neat/app/assets/stylesheets/neat';
+
+// Custom Styles
+
+// Variables
+$primary: #38C4DB;
+
+#title{
+  text-align: center;
+  font-family: helvetica;
+  font-size: 4em;
+}
+
+#home{
+  margin-top: 100px;
+  margin-right: auto;
+  margin-left: auto;
+  height: 200px;
+  width: 50%;
+  background-color: $primary;
+  border: solid black 1px;
+  border-radius: 15px;
+  text-align: center;
+  a{
+    padding-top: 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 3em;
+    font-family: helvetica;
+    padding: 10px;
+    &:hover{
+      color: black;
+    }
+  }
+}
+
+#startup{
+  margin-top: 100px;
+  margin-right: auto;
+  margin-left: auto;
+  height: 400px;
+  width: 50%;
+  background-color: $primary;
+  border: solid black 1px;
+  border-radius: 15px;
+  text-align: center;
+  font-family: helvetica;
+  .signup-form{
+
+    h3{
+      color: white;
+    }
+    h4{
+      color: white;
+    }
+    input{
+      border-radius: 5px;
+    }
+    button{
+      margin-top: 10px;
+      @include button(pill);
+    }
+  }
+}
+
+.login-form{
+  margin-top: 100px;
+  margin-right: auto;
+  margin-left: auto;
+  height: 400px;
+  width: 50%;
+  background-color: $primary;
+  border: solid black 1px;
+  border-radius: 15px;
+  text-align: center;
+  font-family: helvetica;
+  h3{
+    color: white;
+  }
+  h4{
+    color: white;
+  }
+  input{
+    border-radius: 5px;
+  }
+  button{
+    @include button(pill);
+    margin-top: 10px;
+  }
+}
+
+header{
+  width: 100%;
+  height: 100px;
+  background-color: $primary;
+  text-align: center;
+  border-bottom: solid black 1px;
+  p{
+    padding-top: 20px;
+    color: white;
+    font-family: helvetica;
+    margin-top: 0px;
+    font-size: 4em;
+  }
+  #stuff{
+    position: absolute;
+      right: 40px;
+      top: 20px;
+  }
+}
+section{
+  width: 100%;
+  height: 40px;
+  background-color: #ECF0F1;
+  text-align: center;
+  border-bottom: solid black 1px;
+  p{
+    margin-top: 0px;
+    font-family: helvetica;
+    padding-top: 10px;
+  }
+  #left{
+    float: left;
+    margin-top: 10px;
+    text-decoration: none;
+    margin-left: 30px;
+  }
+  #right{
+    float: right;
+    text-decoration: none;
+    margin-top: 10px;
+    margin-right: 30px;
+  }
+}
+
+aside{
+  width: 50%;
+  height: 300px;
+  background-color: #ECF0F1;
+  border: solid black 1px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+    .storage-block1{
+      height: 60px;
+      border-bottom: solid 1px black;
+      background: linear-gradient(to left, white 0%, white 50%, green 50%);
+      background-size: 200% 100%;
+      background-position: 100% 0;
+      transition: all 0.5s;
+      text-align: center;
+      &:hover {
+        background-position: 40% 0;
+      }
+    }
+    .storage-block2{
+      height: 60px;
+      border-bottom: solid 1px black;
+      background: linear-gradient(to left, white 0%, white 50%, red 50%);
+      background-size: 200% 100%;
+      background-position: 100% 0;
+      transition: all 0.5s;
+      text-align: center;
+      &:hover {
+        background-position: 0 0;
+      }
+    }
+    .storage-block3{
+      height: 60px;
+      border-bottom: solid 1px black;
+      background: linear-gradient(to left, white 0%, white 50%, green 50%);
+      background-size: 200% 100%;
+      background-position: 100% 0;
+      transition: all 0.5s;
+      text-align: center;
+      &:hover {
+        background-position: 40% 0;
+      }
+    }
+    .storage-block4{
+      height: 60px;
+      border-bottom: solid 1px black;
+      background: linear-gradient(to left, white 0%, white 50%, green 50%);
+      background-size: 200% 100%;
+      background-position: 100% 0;
+      transition: all 0.5s;
+      text-align: center;
+      &:hover {
+        background-position: 90% 0;
+      }
+    }
+    .storage-block5{
+      height: 60px;
+      border-bottom: solid 1px black;
+      background: linear-gradient(to left, white 0%, white 50%, yellow 50%);
+      background-size: 200% 100%;
+      background-position: 100% 0;
+      transition: all 0.5s;
+      text-align: center;
+      &:hover {
+        background-position: 13.3% 0;
+      }
+    }
+    h2{
+      float: left;
+      margin-top: 10px;
+      margin-left: 10px;
+    }
+    h4{
+      float: right;
+      margin-top: 0px;
+      margin-right: 0px;
+    }
+  }
